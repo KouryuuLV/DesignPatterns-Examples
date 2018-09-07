@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ItalianHoagie.cs" />
-    <Compile Include="Hoagie.cs" />
-    <Compile Include="VeggieHoagie.cs" />
+    <Compile Include="ItalianSandwich.cs" />
+    <Compile Include="Sandwich.cs" />
+    <Compile Include="VeggieSandwich.cs" />
     <Compile Include="SandwichSculptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

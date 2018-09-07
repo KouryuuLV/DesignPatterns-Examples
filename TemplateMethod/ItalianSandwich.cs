@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace TemplateMethod
 {
-    public class ItalianHoagie: Hoagie
+    public class ItalianSandwich: Sandwich
     {
-    List<string> meatUsed = new List<string>(){ "Salami", "Pepperoni", "Capicola Ham" };
+        List<string> meatUsed = new List<string>(){ "Salami", "Pepperoni", "Capicola Ham" };
         List<string> cheeseUsed = new List<string>() { "Provolone" };
         List<string> veggiesUsed = new List<string>() { "Lettuce", "Tomatoes", "Onions", "Sweet Peppers" };
         List<string> condimentsUsed = new List<string>() { "Oil", "Vinegar" };

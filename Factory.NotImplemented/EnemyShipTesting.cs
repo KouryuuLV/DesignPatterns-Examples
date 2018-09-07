@@ -1,5 +1,8 @@
 ﻿using System;
 
+//Factory - https://www.youtube.com/watch?v=ub0DXaeV6hA
+//by Derek Banas https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw
+
 namespace Factory.NotImplemented
 {
 public class EnemyShipTesting
@@ -10,7 +13,7 @@ public class EnemyShipTesting
         // Old way of creating objects
         // When we use new we are not being dynamic
         EnemyShip ufoShip = new UFOEnemyShip();
-        doStuffEnemy(ufoShip);
+        DoStuffEnemy(ufoShip);
         Console.WriteLine("\n");
         // -----------------------------------------
         // This allows me to make the program more dynamic
@@ -19,26 +22,29 @@ public class EnemyShipTesting
         // Defines an input stream to watch: keyboard
             
             Console.WriteLine("What type of ship? (U or R)");
-            string enemyShipOption = Console.ReadLine();
+            var enemyShipOption = Console.ReadLine();
 
-            if (enemyShipOption == "U"){
-            theEnemy = new UFOEnemyShip();
-        } else if (enemyShipOption == "R"){
-            theEnemy = new RocketEnemyShip();
-        } else {
-            theEnemy = new BigUFOEnemyShip();
-        }
-            doStuffEnemy(theEnemy);
+            switch (enemyShipOption.ToLower())
+            {
+                case "u":
+                    theEnemy = new UFOEnemyShip();
+                    break;
+                case "r":
+                    theEnemy = new RocketEnemyShip();
+                    break;
+                default:
+                    theEnemy = new BigUFOEnemyShip();
+                    break;
+            }
+            DoStuffEnemy(theEnemy);
             Console.ReadKey();
-            // --------------------------------------------
         }
     // Executes methods of the super class
-    public static void doStuffEnemy(EnemyShip anEnemyShip)
+    public static void DoStuffEnemy(EnemyShip anEnemyShip)
         {
         anEnemyShip.displayEnemyShip();
         anEnemyShip.followHeroShip();
         anEnemyShip.enemyShipShoots();
+        }
     }
-}
-
 }

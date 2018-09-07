@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Decorator
+﻿namespace Decorator
 {
     // Has a "Has a" relationship with IPizza. This is an
     // Aggregation Relationship
@@ -17,14 +15,14 @@ namespace Decorator
             tempPizza = newPizza;
         }
 
-        public String getDescription()
+        public string GetDescription()
         {
-                return tempPizza.getDescription();
+                return tempPizza.GetDescription();
         }
 
-        public double getCost()
+        public double GetCost()
         {
-            return tempPizza.getCost();
+            return tempPizza.GetCost();
         }
     }
 }

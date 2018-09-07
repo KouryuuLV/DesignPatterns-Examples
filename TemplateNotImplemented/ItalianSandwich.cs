@@ -2,7 +2,7 @@
 
 namespace TemplateMethod
 {
-    public class ItalianHoagie
+    public class ItalianSandwich
     {
         public void makeSandwich()
         {

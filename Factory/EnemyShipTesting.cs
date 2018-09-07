@@ -1,5 +1,8 @@
 ﻿using System;
 
+//Factory - https://www.youtube.com/watch?v=ub0DXaeV6hA
+//by Derek Banas https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw
+
 namespace Factory
 {
     class EnemyShipTesting

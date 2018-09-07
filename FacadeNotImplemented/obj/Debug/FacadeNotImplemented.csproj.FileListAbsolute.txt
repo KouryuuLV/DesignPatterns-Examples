@@ -1,0 +1,6 @@
+C:\Repos\DesignPatterns-Examples\FacadeNotImplemented\bin\Debug\FacadeNotImplemented.exe.config
+C:\Repos\DesignPatterns-Examples\FacadeNotImplemented\bin\Debug\FacadeNotImplemented.exe
+C:\Repos\DesignPatterns-Examples\FacadeNotImplemented\bin\Debug\FacadeNotImplemented.pdb
+C:\Repos\DesignPatterns-Examples\FacadeNotImplemented\obj\Debug\FacadeNotImplemented.csproj.CoreCompileInputs.cache
+C:\Repos\DesignPatterns-Examples\FacadeNotImplemented\obj\Debug\FacadeNotImplemented.exe
+C:\Repos\DesignPatterns-Examples\FacadeNotImplemented\obj\Debug\FacadeNotImplemented.pdb

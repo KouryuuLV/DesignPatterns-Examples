@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TemplateMethod
 {
-    public class VeggieHoagie : Hoagie
+    public class VeggieSandwich : Sandwich
     {
         List<string> veggiesUsed = new List<string> {"Lettuce", "Tomatoes", "Onions", "Sweet Peppers"};
         List<string> condimentsUsed = new List<string> {"Oil", "Vinegar"};

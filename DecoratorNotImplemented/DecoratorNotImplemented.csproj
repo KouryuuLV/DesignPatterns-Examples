@@ -44,8 +44,9 @@
   <ItemGroup>
     <Compile Include="IPizza.cs" />
     <Compile Include="PizzaMaker.cs" />
+    <Compile Include="Pizzas\SalamiCheesePizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThreeCheesePizza.cs" />
+    <Compile Include="Pizzas\ThreeCheesePizza.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

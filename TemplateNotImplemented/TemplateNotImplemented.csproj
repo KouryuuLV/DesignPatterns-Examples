@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ItalianHoagie.cs" />
+    <Compile Include="ItalianSandwich.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SandwichSculptor.cs" />
   </ItemGroup>

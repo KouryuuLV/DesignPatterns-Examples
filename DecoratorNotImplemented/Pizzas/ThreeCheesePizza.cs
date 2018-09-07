@@ -12,25 +12,22 @@ namespace DecoratorNotImplemented
 
     public class ThreeCheesePizza : IPizza
     {
-        private String description = "Mozzarella, Fontina, Parmesan Cheese Pizza";
+        private string description = "Mozzarella, Fontina, Parmesan Cheese Pizza";
         private double cost = 10.50;
 
-        public override void setDescription(String newDescription)
+        public override void SetDescription(string newDescription)
         {
             description = newDescription;
         }
-
-        public override String getDescription()
+        public override string GetDescription()
         {
             return description;
         }
-
-        public override void setCost(double newCost)
+        public override void SetCost(double newCost)
         {
             cost = newCost;
         }
-
-        public override double getCost()
+        public override double GetCost()
         {
             return cost;
         }
