@@ -7,34 +7,38 @@ namespace Factory
 {
     class EnemyShipTesting
     {
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             // Create the factory object
-            EnemyShipFactory shipFactory = new EnemyShipFactory();
+            var shipFactory = new EnemyShipFactory();
             // Enemy ship object
-            EnemyShip theEnemy = null;
-           Console.WriteLine("What type of ship? (U / R / B)");
-            string userInput = Console.ReadLine();
-            if (userInput == "U" | userInput == "R" | userInput == "B")
-            {
-                String typeOfShip = userInput;
-                theEnemy = shipFactory.makeEnemyShip(typeOfShip);
-                if (theEnemy != null)
-                {
-                    doStuffEnemy(theEnemy);
-                }
-                else Console.Write("Please enter U, R, or B next time");
 
-                Console.ReadKey();
+            EnemyShip theEnemy = null;
+            Console.WriteLine("What type of ship? (U / R / B)");
+            var userInput = Console.ReadLine().ToLower();
+            if (!(userInput == "u" | userInput == "r" | userInput == "b"))
+            {
+                return;
             }
+            var typeOfShip = userInput;
+            theEnemy = shipFactory.MakeEnemyShip(typeOfShip);
+            if (theEnemy != null)
+            {
+                DoStuffEnemy(theEnemy);
+            }
+            else
+            {
+                Console.Write("Please enter U, R, or B next time");
+            }
+            Console.ReadKey();
         }
 
         // Executes methods of the super class
-        public static void doStuffEnemy(EnemyShip anEnemyShip)
+        public static void DoStuffEnemy(EnemyShip anEnemyShip)
         {
-            anEnemyShip.displayEnemyShip();
-            anEnemyShip.followHeroShip();
-            anEnemyShip.enemyShipShoots();
+            anEnemyShip.DisplayEnemyShip();
+            anEnemyShip.FollowHeroShip();
+            anEnemyShip.EnemyShipShoots();
         }
     }
 }

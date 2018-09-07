@@ -8,7 +8,7 @@ namespace Decorator
 {
     class PizzaMaker
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // The PlainPizza object is sent to the Mozzarella constructor
             // and then to the TomatoSauce constructor

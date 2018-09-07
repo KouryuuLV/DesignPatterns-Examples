@@ -12,12 +12,12 @@ namespace Decorator.Ingridents
         // Returns the result of calling getDescription() for
         // PlainPizza and adds " mozzarella" to it
 
-        public string GetDescription()
+        public new string GetDescription()
         {
             return base.GetDescription() + ", salami";
         }
 
-        public double GetCost()
+        public new double GetCost()
         {
             Console.WriteLine("Cost of Salami: " + 2.50);
             return base.GetCost() + 2.50;

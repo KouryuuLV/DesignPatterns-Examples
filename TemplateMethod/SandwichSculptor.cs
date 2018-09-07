@@ -5,17 +5,16 @@
 
 namespace TemplateMethod
 {
-        public class SandwichSculptor
+    public class SandwichSculptor
+    {
+        public static void Main(string[] args)
         {
-        public static void Main(String[] args)
-        {
-            ItalianSandwich FirstSandwich = new ItalianSandwich();
-            FirstSandwich.makeSandwich();
+            var firstSandwich = new ItalianSandwich();
+            firstSandwich.MakeSandwich();
             Console.WriteLine();
-            VeggieSandwich SecondSandwich = new VeggieSandwich();
-            SecondSandwich.makeSandwich();
+            var secondSandwich = new VeggieSandwich();
+            secondSandwich.MakeSandwich();
             Console.ReadKey();
         }
     }
-
 }

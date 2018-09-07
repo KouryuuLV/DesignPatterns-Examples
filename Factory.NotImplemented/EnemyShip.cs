@@ -4,45 +4,42 @@ namespace Factory.NotImplemented
 {
     public abstract class EnemyShip
     {
-        private String name;
-        private double speed;
-        private double directionX;
-        private double directionY;
-        private double amtDamage;
+        private string _name;
+        private double _damage;
 
-        public String getName()
+        public string GetName()
         {
-            return name;
+            return _name;
         }
 
-        public void setName(String newName)
+        public void SetName(string newName)
         {
-            name = newName;
+            _name = newName;
         }
 
-        public double getDamage()
+        public double GetDamage()
         {
-            return amtDamage;
+            return _damage;
         }
 
-        public void setDamage(double newDamage)
+        public void SetDamage(double newDamage)
         {
-            amtDamage = newDamage;
+            _damage = newDamage;
         }
 
-        public void followHeroShip()
+        public void FollowHeroShip()
         {
-            Console.WriteLine(getName() + " is following the hero");
+            Console.WriteLine(GetName() + " is following the hero");
         }
 
-        public void displayEnemyShip()
+        public void DisplayEnemyShip()
         {
-            Console.WriteLine(getName() + " is on the screen");
+            Console.WriteLine(GetName() + " is on the screen");
         }
 
-        public void enemyShipShoots()
+        public void EnemyShipShoots()
         {
-            Console.WriteLine(getName() + " attacks and does " + getDamage() + " damage to hero");
+            Console.WriteLine(GetName() + " attacks and does " + GetDamage() + " damage to hero");
         }
     }
 }

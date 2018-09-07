@@ -4,8 +4,8 @@
     {
     public RocketEnemyShip()
     {
-        setName("Rocket Enemy Ship");
-        setDamage(10.0);
+        SetName("Rocket Enemy Ship");
+        SetDamage(10.0);
     }
     }
 }

@@ -4,25 +4,25 @@
     // Aggregation Relationship
     public abstract class ToppingDecorator : IPizza
     {
-        private IPizza tempPizza;
+        private readonly IPizza _tempPizza;
 
         // Assigns the type instance to this attribute of a IPizza
         // All decorators can dynamically customize the IPizza
         // instance PlainPizza because of this
 
-        public ToppingDecorator(IPizza newPizza)
+        protected ToppingDecorator(IPizza newPizza)
         {
-            tempPizza = newPizza;
+            _tempPizza = newPizza;
         }
 
         public string GetDescription()
         {
-                return tempPizza.GetDescription();
+                return _tempPizza.GetDescription();
         }
 
         public double GetCost()
         {
-            return tempPizza.GetCost();
+            return _tempPizza.GetCost();
         }
     }
 }

@@ -4,8 +4,8 @@
     {
     public BigUFOEnemyShip()
     {
-        setName("Big UFO Enemy Ship");
-        setDamage(40.0);
+        SetName("Big UFO Enemy Ship");
+        SetDamage(40.0);
     }
     }
 }

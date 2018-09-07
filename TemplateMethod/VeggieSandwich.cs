@@ -5,42 +5,42 @@ namespace TemplateMethod
 {
     public class VeggieSandwich : Sandwich
     {
-        List<string> veggiesUsed = new List<string> {"Lettuce", "Tomatoes", "Onions", "Sweet Peppers"};
-        List<string> condimentsUsed = new List<string> {"Oil", "Vinegar"};
+        private readonly List<string> _veggiesUsed = new List<string> {"Lettuce", "Tomatoes", "Onions", "Sweet Peppers"};
+        private readonly List<string> _condimentsUsed = new List<string> {"Oil", "Vinegar"};
 
-        bool customerWantsMeat()
+        public override bool CustomerWantsMeat()
         {
             return false;
         }
 
-        bool customerWantsCheese()
+        public override bool CustomerWantsCheese()
         {
             return false;
         }
 
-        public override void addVegetables()
+        public override void AddVegetables()
         {
             Console.Write("Adding the Vegetables: ");
-            foreach (string vegetable in veggiesUsed)
+            foreach (string vegetable in _veggiesUsed)
             {
                 Console.Write(vegetable + " ");
             }
         }
 
-        public override void addCondiments()
+        public override void AddCondiments()
         {
             Console.Write("Adding the Condiments: ");
-            foreach (string condiment in condimentsUsed)
+            foreach (string condiment in _condimentsUsed)
             {
                 Console.Write(condiment + " ");
             }
         }
 
-        public override void addMeat()
+        public override void AddMeat()
         {
         }
 
-        public override void addCheese()
+        public override void AddCheese()
         {
         }
     }

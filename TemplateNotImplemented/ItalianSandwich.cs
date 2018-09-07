@@ -1,45 +1,45 @@
 ﻿using System;
 
-namespace TemplateMethod
+namespace TemplateNotImplemented
 {
     public class ItalianSandwich
     {
-        public void makeSandwich()
+        public void MakeSandwich()
         {
-            cutBun();
-            addMeat();
-            addCheese();
-            addVegetables();
-            addCondiments();
-            wrapTheHoagie();
+            CutBun();
+            AddMeat();
+            AddCheese();
+            AddVegetables();
+            AddCondiments();
+            WrapTheHoagie();
         }
 
-        public void cutBun()
+        public void CutBun()
         {
             Console.WriteLine("The Hoagie is Cut");
         }
 
-        public void addMeat()
+        public void AddMeat()
         {
             Console.WriteLine("Add Salami, Pepperoni and Capicola ham");
         }
 
-        public void addCheese()
+        public void AddCheese()
         {
             Console.WriteLine("Add Provolone");
         }
 
-        public void addVegetables()
+        public void AddVegetables()
         {
             Console.WriteLine("Add Lettuce, Tomatoes, Onions and Sweet Peppers");
         }
 
-        public void addCondiments()
+        public void AddCondiments()
         {
             Console.WriteLine("Add Oil and Vinegar");
         }
 
-        public void wrapTheHoagie()
+        public void WrapTheHoagie()
         {
             Console.WriteLine("Wrap the Hoagie");
         }

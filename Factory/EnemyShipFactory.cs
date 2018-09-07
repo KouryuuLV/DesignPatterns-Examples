@@ -1,30 +1,25 @@
-﻿using System;
-
-namespace Factory
+﻿namespace Factory
 {
-// This is a factory thats only job is creating ships
-// By encapsulating ship creation, we only have one
-// place to make modifications
+    // This is a factory thats only job is creating ships
+    // By encapsulating ship creation, we only have one
+    // place to make modifications
     public class EnemyShipFactory
     {
-// This could be used as a static method if we
-// are willing to give up subclassing it
-        public EnemyShip makeEnemyShip(String newShipType)
+    // This could be used as a static method if we
+    // are willing to give up subclassing it
+        public EnemyShip MakeEnemyShip(string newShipType)
         {
-            EnemyShip newShip = null;
-            if (newShipType == "U")
+            switch (newShipType)
             {
-                return new UFOEnemyShip();
+                case "u":
+                    return new UFOEnemyShip();
+                case "r":
+                    return new RocketEnemyShip();
+                case "b":
+                    return new BigUFOEnemyShip();
+                default:
+                    return null;
             }
-            else if (newShipType == "R")
-            {
-                return new RocketEnemyShip();
-            }
-            else if (newShipType == "B")
-            {
-                return new BigUFOEnemyShip();
-            }
-            else return null;
         }
     }
 }

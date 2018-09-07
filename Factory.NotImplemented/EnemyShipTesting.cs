@@ -42,9 +42,9 @@ public class EnemyShipTesting
     // Executes methods of the super class
     public static void DoStuffEnemy(EnemyShip anEnemyShip)
         {
-        anEnemyShip.displayEnemyShip();
-        anEnemyShip.followHeroShip();
-        anEnemyShip.enemyShipShoots();
+        anEnemyShip.DisplayEnemyShip();
+        anEnemyShip.FollowHeroShip();
+        anEnemyShip.EnemyShipShoots();
         }
     }
 }
