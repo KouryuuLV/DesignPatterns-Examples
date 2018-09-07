@@ -1,0 +1,22 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Decorator/bin/Debug
+/.vs/DesignPatterns/v15/Server/sqlite3
+/Decorator/obj/Debug
+/DecoratorNotImplemented/bin/Debug
+/DecoratorNotImplemented/obj/Debug
+/Facade/.vs/Facade
+/Facade/Facade/bin/Debug
+/Facade/Facade/obj/Debug
+/Factory/bin/Debug
+/Factory/obj/Debug
+/Factory.NotImplemented/bin/Debug
+/Factory.NotImplemented/obj/Debug
+/IPizza/obj/Debug
+/TemplateMethod/bin/Debug
+/TemplateMethod/obj/Debug
+/TemplateNotImplemented/bin/Debug
+/TemplateNotImplemented/obj/Debug
+/TomatoSouce/obj/Debug

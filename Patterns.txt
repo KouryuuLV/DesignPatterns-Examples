@@ -1,0 +1,12 @@
+Factory - https://www.youtube.com/watch?v=ub0DXaeV6hA
+
+Facade - https://www.youtube.com/watch?v=B1Y8fcYrz5o
+
+repository - https://www.youtube.com/watch?v=rtXpYpZdOzM
+
+decorator - https://www.youtube.com/watch?v=j40kRwSm4VE
+
+template - https://www.youtube.com/watch?v=aR1B8MlwbRI
+
+Full PlayList with aditional patterns :
+https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07
